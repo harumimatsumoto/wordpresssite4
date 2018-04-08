@@ -14,7 +14,7 @@
 get_header(); ?>
 
 </header>
-
+<!--初期で参考にしてるぽい関数-->
 <?php do_action( 'hestia_page_builder_full_before_content' ); ?>
 
 <div class="<?php echo hestia_layout(); ?>">

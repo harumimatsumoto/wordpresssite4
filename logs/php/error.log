@@ -24,3 +24,4 @@ Stack trace:
 #8 /usr/local/bin/wp(4): include('phar:///usr/loc...')
 #9 {main}
   thrown in phar:///usr/local/bin/wp/php/WP_CLI/Dispatcher/Subcommand.php on line 254
+[26-Mar-2018 12:48:48 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/plugin-install.php on line 168

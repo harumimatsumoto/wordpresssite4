@@ -17,16 +17,17 @@ if ( ! function_exists( 'hestia_layout' ) ) :
 	 * @modified 1.1.64
 	 */
 	function hestia_layout() {
-
+		/*TODO:レイアウト変更はここ？*/
 		/**
 		 * For the Page Builder Full Width template don't add any extra classes (except main)
 		 */
+		/*TODO:ここでフルサイズのものが読み込まれていたらメインという値を返す*/
 		if ( is_page_template( 'page-templates/template-pagebuilder-full-width.php' ) ) {
 			return 'main';
 		}
 
 		$layout_class = 'main ';
-
+		/*フルサイズ以外の場合はレイアウトの１番目を取得する*/
 		$hestia_general_layout = get_theme_mod( 'hestia_general_layout', 1 );
 
 		/**
