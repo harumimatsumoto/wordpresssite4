@@ -12,16 +12,16 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Astrid
+ * @package Simpledesign
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses astrid_header_style()
+ * @uses simpledesign_header_style()
  */
-function astrid_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'astrid_custom_header_args', array(
+function simpledesign_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'simpledesign_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/images/header.jpg',
 		'default-text-color'     => '000000',
 		'width'                  => 1920,
@@ -32,15 +32,15 @@ function astrid_custom_header_setup() {
 		'wp-head-callback'       => '',
 	) ) );
 }
-add_action( 'after_setup_theme', 'astrid_custom_header_setup' );
+add_action( 'after_setup_theme', 'simpledesign_custom_header_setup' );
 
 /**
  * Video header settings
  */
-function astrid_video_settings( $settings ) {
+function simpledesign_video_settings( $settings ) {
 	$settings['minWidth'] 		= '200';
 	$settings['minHeight'] 		= '200';	
 	
 	return $settings;
 }
-add_filter( 'header_video_settings', 'astrid_video_settings' );
+add_filter( 'header_video_settings', 'simpledesign_video_settings' );

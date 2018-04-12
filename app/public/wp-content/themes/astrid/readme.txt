@@ -1,6 +1,6 @@
-=== Astrid ===
+=== Simpledesign ===
 
-Contributors: athemes
+Contributors: mharumi
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
 Requires at least: 4.0
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Astrid can help you to quickly create an awesome business website. All the features you need are waiting for you in this business theme: color options, fonts, full width header image, custom widgets, blog options and many other interesting and useful options.
+Simpledesign can help you to quickly create an awesome business website. All the features you need are waiting for you in this business theme: color options, fonts, full width header image, custom widgets, blog options and many other interesting and useful options.
 
 == Installation ==
 	

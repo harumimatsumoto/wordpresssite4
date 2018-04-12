@@ -25,3 +25,706 @@ Stack trace:
 #9 {main}
   thrown in phar:///usr/local/bin/wp/php/WP_CLI/Dispatcher/Subcommand.php on line 254
 [26-Mar-2018 12:48:48 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-admin/includes/plugin-install.php on line 168
+[10-Apr-2018 11:06:46 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:06:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT SQL_CALC_FOUND_ROWS wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '1' ) OR ( user_id = 1 AND comment_approved = '0' ) ) AND comment_post_ID = 48 AND comment_parent = 0  ORDER BY wp_comments.comment_date_gmt ASC, wp_comments.comment_ID ASC  made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/astrid/single.php'), comments_template, WP_Comment_Query->__construct, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:07:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_date_gmt FROM wp_comments WHERE comment_approved = '1' ORDER BY comment_date_gmt DESC LIMIT 1 made by require('wp-blog-header.php'), wp, WP->main, WP->send_headers, get_lastcommentmodified
+[10-Apr-2018 11:07:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.* FROM wp_comments JOIN wp_posts ON ( wp_comments.comment_post_ID = wp_posts.ID ) WHERE ( post_status = 'publish' OR ( post_status = 'inherit' AND post_type = 'attachment' ) ) AND comment_approved = '1'  ORDER BY comment_date_gmt DESC LIMIT 10 made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[10-Apr-2018 11:07:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_date_gmt FROM wp_comments WHERE comment_approved = '1' ORDER BY comment_date_gmt DESC LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_feed, do_action('do_feed_rss2'), WP_Hook->do_action, WP_Hook->apply_filters, do_feed_rss2, load_template, require_once('wp-includes/feed-rss2-comments.php'), get_lastcommentmodified
+[10-Apr-2018 11:07:42 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:07:42 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[10-Apr-2018 11:07:50 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:07:50 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  COUNT(*) FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) ) AND comment_post_ID = 55  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,1 made by include('wp-admin/edit-form-advanced.php'), do_meta_boxes, post_comment_meta_box, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:08:36 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:09:51 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:09:51 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:10:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:10:33 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:03 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:05 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:09 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:15 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:50 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:50 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:11:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:11:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[10-Apr-2018 11:11:55 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:12:15 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:12:16 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:12:30 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:13:04 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:13:05 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:24:05 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:24:05 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:37:54 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:37:55 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:38:15 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:15 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 11:38:25 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:30 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:39 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:39 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:43 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:38:47 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:02 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:02 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:04 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:09 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:21 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:21 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:25 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:39:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:40:01 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:40:01 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:40:03 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:40:08 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:41:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:41:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 11:41:39 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:21 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:21 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[10-Apr-2018 12:00:23 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:23 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[10-Apr-2018 12:00:30 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:44 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:44 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:50 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[10-Apr-2018 12:00:53 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:12:03 UTC] WordPress database error Table 'local.wp_commentmeta' doesn't exist for query SELECT comment_id FROM wp_commentmeta WHERE meta_key = '_wp_trash_meta_time' AND meta_value < 1520853123 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, wp_scheduled_delete
+[11-Apr-2018 11:26:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:26:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[11-Apr-2018 11:26:35 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:26:35 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[11-Apr-2018 11:26:38 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:28:04 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:28:04 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:28:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 11:28:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:02:11 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:02:11 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[11-Apr-2018 12:02:21 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:02:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:02:31 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '71', '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[11-Apr-2018 12:02:35 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:03:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:03:38 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:03:48 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:04:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:04:53 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:13:22 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:13:22 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[11-Apr-2018 12:13:26 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:13:35 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:15:00 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:15:03 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:15:14 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:15:14 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT DATE(c.comment_date_gmt) AS 'date', COUNT(c.comment_post_ID) AS 'comment_count' FROM `wp_comments` c INNER JOIN `wp_posts` p ON c.comment_post_ID = p.ID WHERE 1 = 1 AND p.post_type IN('post', 'page')  AND c.comment_date_gmt > DATE_SUB('2018-04-11 12:15:14', INTERVAL 6 DAY) AND c.comment_approved = 1 AND p.post_password = '' AND p.post_status = 'publish' GROUP BY date ORDER BY date ASC ; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Admin->get_chart_data, WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:15:14 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT p.ID AS id, p.post_title AS title, p.post_author AS uid, p.post_date AS date, COUNT(c.comment_post_ID) AS comment_count FROM `wp_comments` c LEFT JOIN wp_posts p ON c.comment_post_ID = p.ID WHERE 1 = 1 AND p.post_type IN('post', 'page')  AND c.comment_date_gmt > DATE_SUB('2018-04-11 12:15:14', INTERVAL 6 DAY) AND c.comment_approved = 1 AND p.post_password = '' AND p.post_status = 'publish' GROUP BY c.comment_post_ID ORDER BY comment_count DESC LIMIT 10 OFFSET 0; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Admin->get_most_commented, WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:15:14 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT p.ID AS id, p.post_title AS title, p.post_author AS uid, p.post_date AS date, SUM(v.pageviews) AS pageviews, IFNULL(c.comment_count, 0) AS comment_count FROM `wp_popularpostssummary` v LEFT JOIN `wp_posts` p ON v.postid = p.ID LEFT JOIN (SELECT comment_post_ID, COUNT(comment_post_ID) AS comment_count FROM `wp_comments` WHERE comment_date_gmt > DATE_SUB('2018-04-11 12:15:14', INTERVAL 1 HOUR) AND comment_approved = 1 GROUP BY comment_post_ID) c ON p.ID = c.comment_post_ID WHERE 1 = 1 AND p.post_type IN('post', 'page') AND v.view_datetime > DATE_SUB('2018-04-11 12:15:14', INTERVAL 1 HOUR) AND p.post_password = '' AND p.post_status = 'publish' GROUP BY v.postid ORDER BY pageviews DESC LIMIT 10 OFFSET 0; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:15:33 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:15:33 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT DATE(c.comment_date_gmt) AS 'date', COUNT(c.comment_post_ID) AS 'comment_count' FROM `wp_comments` c INNER JOIN `wp_posts` p ON c.comment_post_ID = p.ID WHERE 1 = 1 AND p.post_type IN('post', 'page')  AND c.comment_date_gmt > DATE_SUB('2018-04-11 12:15:33', INTERVAL 6 DAY) AND c.comment_approved = 1 AND p.post_password = '' AND p.post_status = 'publish' GROUP BY date ORDER BY date ASC ; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Admin->get_chart_data, WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:15:33 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT p.ID AS id, p.post_title AS title, p.post_author AS uid, p.post_date AS date, COUNT(c.comment_post_ID) AS comment_count FROM `wp_comments` c LEFT JOIN wp_posts p ON c.comment_post_ID = p.ID WHERE 1 = 1 AND p.post_type IN('post', 'page')  AND c.comment_date_gmt > DATE_SUB('2018-04-11 12:15:33', INTERVAL 6 DAY) AND c.comment_approved = 1 AND p.post_password = '' AND p.post_status = 'publish' GROUP BY c.comment_post_ID ORDER BY comment_count DESC LIMIT 10 OFFSET 0; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Admin->get_most_commented, WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:15:33 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT p.ID AS id, p.post_title AS title, p.post_author AS uid, p.post_date AS date, SUM(v.pageviews) AS pageviews, IFNULL(c.comment_count, 0) AS comment_count FROM `wp_popularpostssummary` v LEFT JOIN `wp_posts` p ON v.postid = p.ID LEFT JOIN (SELECT comment_post_ID, COUNT(comment_post_ID) AS comment_count FROM `wp_comments` WHERE comment_date_gmt > DATE_SUB('2018-04-11 12:15:33', INTERVAL 1 HOUR) AND comment_approved = 1 GROUP BY comment_post_ID) c ON p.ID = c.comment_post_ID WHERE 1 = 1 AND p.post_type IN('post', 'page') AND v.view_datetime > DATE_SUB('2018-04-11 12:15:33', INTERVAL 1 HOUR) AND p.post_password = '' AND p.post_status = 'publish' GROUP BY v.postid ORDER BY pageviews DESC LIMIT 10 OFFSET 0; made by require_once('wp-admin/admin.php'), do_action('settings_page_wordpress-popular-posts'), WP_Hook->do_action, WP_Hook->apply_filters, WPP_Admin->display_plugin_admin_page, include_once('/plugins/wordpress-popular-posts/admin/partials/admin.php'), WPP_Query->__construct, WPP_Query->run_query
+[11-Apr-2018 12:17:12 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:17:16 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:17:18 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:22:21 UTC] WordPress database error Table 'local.wp_commentmeta' doesn't exist for query SELECT comment_id FROM wp_commentmeta WHERE meta_key = '_wp_trash_meta_time' AND meta_value < 1520857341 made by do_action_ref_array, WP_Hook->do_action, WP_Hook->apply_filters, wp_scheduled_delete
+[11-Apr-2018 12:32:06 UTC] PHP Warning:  require(/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php): failed to open stream: No such file or directory in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:06 UTC] PHP Fatal error:  require(): Failed opening required '/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:14 UTC] PHP Warning:  require(/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php): failed to open stream: No such file or directory in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:14 UTC] PHP Fatal error:  require(): Failed opening required '/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:22 UTC] PHP Warning:  require(/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php): failed to open stream: No such file or directory in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:22 UTC] PHP Fatal error:  require(): Failed opening required '/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:30 UTC] PHP Warning:  require(/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php): failed to open stream: No such file or directory in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:32:30 UTC] PHP Fatal error:  require(): Failed opening required '/app/public/wp-content/themes/astrid/woocommerce/woocommerce.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /app/public/wp-content/themes/astrid/functions.php on line 509
+[11-Apr-2018 12:34:22 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:34:25 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:34:28 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:34:38 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:49:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:49:29 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[11-Apr-2018 12:49:32 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:49:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:49:37 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[11-Apr-2018 12:51:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:52:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:52:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:53:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:53:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:54:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:55:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:55:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Sdframework_Services' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('Sdframework_Ser...')
+#1 /app/public/wp-content/themes/astrid/functions.php(163): register_widget('Sdframework_Ser...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): simpledesign_widgets_init('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1648): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(450): do_action('init')
+#10 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_ in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[11-Apr-2018 12:56:49 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:56:51 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:56:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[11-Apr-2018 12:56:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '75', '73', '71', '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num
+[12-Apr-2018 11:49:11 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[12-Apr-2018 11:49:11 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT  wp_comments.comment_ID FROM wp_comments  WHERE ( ( comment_approved = '0' OR comment_approved = '1' ) )  ORDER BY wp_comments.comment_date_gmt DESC LIMIT 0,25 made by wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_comments, get_comments, WP_Comment_Query->query, WP_Comment_Query->get_comments, WP_Comment_Query->get_comment_ids
+[12-Apr-2018 11:49:22 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[12-Apr-2018 11:59:52 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[12-Apr-2018 11:59:58 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query 
+		SELECT comment_approved, COUNT( * ) AS total
+		FROM wp_comments
+		
+		GROUP BY comment_approved
+	 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), wp_count_comments, get_comment_count
+[12-Apr-2018 11:59:58 UTC] WordPress database error Table 'local.wp_comments' doesn't exist for query SELECT comment_post_ID, COUNT(comment_ID) as num_comments FROM wp_comments WHERE comment_post_ID IN ( '75', '73', '71', '55', '52', '50', '48', '1' ) AND comment_approved = '0' GROUP BY comment_post_ID made by WP_List_Table->display, WP_List_Table->display_rows_or_placeholder, WP_Posts_List_Table->display_rows, WP_Posts_List_Table->_display_rows, get_pending_comments_num

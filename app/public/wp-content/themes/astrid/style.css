@@ -1,19 +1,19 @@
 /*
-Theme Name: Astrid
-Theme URI: http://athemes.com/theme/astrid
-Author: aThemes
-Author URI: http://athemes.com
-Description: Astrid can help you to quickly create an awesome business website. All the features you need are waiting for you in this business theme: color options, fonts, full width header image, custom widgets, blog options and many other interesting and useful options.
+Theme Name: Simpledesign
+Theme URI: http://mharumi.com/theme/simpledesign
+Author: mHarumi
+Author URI: http://mharumi.com
+Description: Simpledesign can help you to quickly create an awesome business website. All the features you need are waiting for you in this business theme: color options, fonts, full width header image, custom widgets, blog options and many other interesting and useful options.
 Version: 1.15
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: astrid
+Text Domain: simpledesign
 Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
-Astrid WordPress Theme, Copyright 2016 aThemes
-Astrid is distributed under the terms of the GNU GPL v2 or later.
+Simpledesign WordPress Theme, Copyright 2018 mHarumi
+Simpledesign is distributed under the terms of the GNU GPL v2 or later.
 
-Astrid is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Simpledesign is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 */
@@ -58,6 +58,10 @@ p {
 h4 {
 	font-size: 16px;
 }
+li {
+	list-style: none;
+}
+
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
@@ -1220,12 +1224,12 @@ section.at-3-col {
 	display: inline-block;
 	vertical-align: top;
 }
-.astrid-3col:nth-of-type(3n+1) {
+.simpledesign-3col:nth-of-type(3n+1) {
 	clear: left;
 }
-.astrid-3col:last-of-type,
-.astrid-3col:nth-last-of-type(2),
-.astrid-3col:nth-last-of-type(3) {
+.simpledesign-3col:last-of-type,
+.simpledesign-3col:nth-last-of-type(2),
+.simpledesign-3col:nth-last-of-type(3) {
 	margin-bottom: 0;
 }
 .service-title a {
@@ -1579,8 +1583,9 @@ body.page-template-page_widgetized {
 .header-image {
 	position: relative;
 	text-align: center;
+	opacity:0.7;
 }
-.header-image::after {
+/*.header-image::after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -1588,7 +1593,7 @@ body.page-template-page_widgetized {
 	top: 0;
 	left: 0;
 	background-color: rgba(37, 46, 53, 0.9);
-}
+}*/
 .header-info {
 	width: 100%;
 	position: absolute;
@@ -1603,6 +1608,7 @@ body.page-template-page_widgetized {
 	display: table;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+	opacity: 1.0;
 }
 .header-subtext {
 	color: #fff;
@@ -2208,17 +2214,17 @@ body.page-template-page_widgetized {
 	.header-button {
 		margin-top: 20px;
 	}	
-	.astrid-3col {
+	.simpledesign-3col {
 		width: 48%;
 	}
-	.astrid-3col:nth-of-type(2n+1) {
+	.simpledesign-3col:nth-of-type(2n+1) {
 		clear: left;
 	}
-	.astrid-3col:nth-last-of-type(3) {
+	.simpledesign-3col:nth-last-of-type(3) {
 		margin-bottom: 45px;
 	}
-	.astrid-3col:last-of-type,
-	.astrid-3col:nth-last-of-type(2) {
+	.simpledesign-3col:last-of-type,
+	.simpledesign-3col:nth-last-of-type(2) {
 		margin-bottom: 0;
 	}
 	.fact {
@@ -2316,12 +2322,12 @@ body.page-template-page_widgetized {
 		width: 100% !important;
 		max-width: 380px;
 	}
-	.astrid-3col {
+	.simpledesign-3col {
 		width: 100%;
 		margin-bottom: 30px;
 	}
-	.astrid-3col:nth-last-of-type(2),
-	.astrid-3col:nth-last-of-type(3) {
+	.simpledesign-3col:nth-last-of-type(2),
+	.simpledesign-3col:nth-last-of-type(3) {
 		margin-bottom: 30px;
 	}
 	.fact {
@@ -2356,8 +2362,8 @@ body.page-template-page_widgetized {
 	h3 {
 		font-size: 20px !important;
 	}	
-	.astrid-2col,
-	.astrid-3col {
+	.simpledesign-2col,
+	.simpledesign-3col {
 		padding-left: 0;
 		padding-right: 0;
 	}

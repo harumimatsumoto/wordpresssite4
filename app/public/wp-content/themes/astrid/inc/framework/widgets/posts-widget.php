@@ -2,14 +2,14 @@
 /**
  * Recent posts with thumbnails
  *
- * @package Atframework
+ * @package Sdframework
  */
 
-class Atframework_Recent_Posts extends WP_Widget {
+class Sdframework_Recent_Posts extends WP_Widget {
 
 	public function __construct() {
-		$widget_ops = array('classname' => 'widget_recent_posts', 'description' => __( 'Recent posts with thumbnails', 'astrid') );
-		parent::__construct('atframework-recent-posts', __('Astrid: Recent Posts', 'astrid'), $widget_ops);
+		$widget_ops = array('classname' => 'widget_recent_posts', 'description' => __( 'Recent posts with thumbnails', 'simpledesign') );
+		parent::__construct('atframework-recent-posts', __('Simpledesign: Recent Posts', 'simpledesign'), $widget_ops);
 		$this->alt_option_name = 'widget_recent_entries';
 	}
 
@@ -46,7 +46,7 @@ class Atframework_Recent_Posts extends WP_Widget {
 			$number = 5;
 		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
 
-		$r = new WP_Query( apply_filters( 'astrid_widget_posts_args', array(
+		$r = new WP_Query( apply_filters( 'simpledesign_widget_posts_args', array(
 			'posts_per_page'      => $number,
 			'no_found_rows'       => true,
 			'post_status'         => 'publish',
@@ -113,14 +113,14 @@ class Atframework_Recent_Posts extends WP_Widget {
 		$number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 		$show_date = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;
 ?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'astrid' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'simpledesign' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:', 'astrid'  ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:', 'simpledesign'  ); ?></label>
 		<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
 
 		<p><input class="checkbox" type="checkbox" <?php checked( $show_date ); ?> id="<?php echo $this->get_field_id( 'show_date' ); ?>" name="<?php echo $this->get_field_name( 'show_date' ); ?>" />
-		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display post date?', 'astrid'  ); ?></label></p>
+		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display post date?', 'simpledesign'  ); ?></label></p>
 <?php
 	}
 }

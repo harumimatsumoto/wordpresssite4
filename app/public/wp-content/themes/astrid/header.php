@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Astrid
+ * @package Simpledesign
  */
 
 ?><!DOCTYPE html>
@@ -29,12 +29,12 @@
 </div>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'astrid' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'simpledesign' ); ?></a>
 
-	<header id="masthead" class="site-header <?php echo astrid_has_header(); ?>" role="banner">
+	<header id="masthead" class="site-header <?php echo simpledesign_has_header(); ?>" role="banner">
 		<div class="container">
 			<div class="site-branding col-md-4 col-sm-6 col-xs-12">
-				<?php astrid_branding(); ?>
+				<?php simpledesign_branding(); ?>
 			</div>
 			<div class="btn-menu col-md-8 col-sm-6 col-xs-12"><i class="fa fa-navicon"></i></div>
 			<nav id="mainnav" class="main-navigation col-md-8 col-sm-6 col-xs-12" role="navigation">
@@ -43,10 +43,10 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<?php $astrid_has_header = astrid_has_header(); ?>
-	<?php if ( $astrid_has_header == 'has-header' ) : ?>
+	<?php $simpledesign_has_header = simpledesign_has_header(); ?>
+	<?php if ( $simpledesign_has_header == 'has-header' ) : ?>
 	<div class="header-image">
-		<?php astrid_header_text(); ?>
+		<?php simpledesign_header_text(); ?>
 		<img class="large-header" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
 		
 		<?php $mobile_default = get_template_directory_uri() . '/images/header-mobile.jpg'; ?>
@@ -57,15 +57,15 @@
 		<img class="small-header" src="<?php header_image(); ?>" width="1024" alt="<?php bloginfo('name'); ?>">
 		<?php endif; ?>
 	</div>
-	<?php elseif ( $astrid_has_header == 'has-shortcode' ) : ?>
+	<?php elseif ( $simpledesign_has_header == 'has-shortcode' ) : ?>
 	<div class="shortcode-area">
-		<?php $shortcode = get_theme_mod('astrid_shortcode'); ?>
+		<?php $shortcode = get_theme_mod('simpledesign_shortcode'); ?>
 		<?php echo do_shortcode(wp_kses_post($shortcode)); ?>
 	</div>
-	<?php elseif ( $astrid_has_header == 'has-video' ) : ?>
+	<?php elseif ( $simpledesign_has_header == 'has-video' ) : ?>
 		<?php the_custom_header_markup(); ?>
-	<?php elseif ( $astrid_has_header == 'has-single' ) : ?>
-		<?php $single_toggle = get_post_meta( $post->ID, '_astrid_single_header_shortcode', true ); ?>
+	<?php elseif ( $simpledesign_has_header == 'has-single' ) : ?>
+		<?php $single_toggle = get_post_meta( $post->ID, '_simpledesign_single_header_shortcode', true ); ?>
 		<?php echo do_shortcode(wp_kses_post($single_toggle)); ?>
 	<?php else : ?>
 	<div class="header-clone"></div>
@@ -77,7 +77,7 @@
 		<?php $container = 'home-wrapper'; ?>
 	<?php endif; ?>
 
-	<?php do_action('astrid_before_content'); ?>
+	<?php do_action('simpledesign_before_content'); ?>
 
 	<div id="content" class="site-content">
 		<div class="<?php echo $container; ?>">
