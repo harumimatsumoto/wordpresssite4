@@ -25,6 +25,7 @@ get_header(); ?>
 				<ul class ='top_lists entry-meta'>
 				<?php dynamic_sidebar( 'PopularPost' ) ; ?>
 				<?php
+					//TODO:あとでquery_posts使わない形に修正
 					query_posts('cat='.$category->cat_ID);
 					if (have_posts()) : while (have_posts()) : the_post();
 				?>
@@ -34,24 +35,6 @@ get_header(); ?>
 			</div>
 		</div>
 		<?php endforeach; //endif;?>
-		<?php /*if ( have_posts() ) : ?>
-
-			<div class="posts-layout">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<!--get_post_formatで何らかのフォーマットをとってきている？-->
-					<?php print_r(get_post_format()); ?>
-					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-				<?php endwhile; ?>
-			</div>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; */?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
