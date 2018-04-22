@@ -120,20 +120,13 @@ function simpledesign_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
-	register_sidebar(array(
-		'name' => 'PopularPost' ,
-		'id' => 'footer' ,
-		'description'   => '',		
-		'before_widget' => '<div class="widget">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-   ));
+
 	//Register widget areas for the Widgetized page template
 	$pages = get_pages(array(
-		'meta_key' => '_wp_page_template',
-		'meta_value' => 'page-templates/page_widgetized.php',
+		//'meta_key' => '_wp_page_template',
+		//'meta_value' => 'page-templates/page_widgetized.php',
 	));
+	echo($pages->$post_name);
 	foreach($pages as $page){
 		register_sidebar( array(
 			'name'          => esc_html__( 'Page - ', 'simpledesign' ) . $page->post_title,
@@ -158,7 +151,21 @@ function simpledesign_widgets_init() {
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		) );
-	}	
+	}
+//	'before_widget' => "<div class='widget'".$num.">",
+	//Popularpost widget areas
+	for($i=1 ; $i <= wp_count_terms('category') ; $i++){
+		register_sidebar(array(
+			'name' => 'PopularPost'.$i,
+			'id' => 'postcontent'.$i ,
+			'description'   => '',		
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>',
+	   ));
+	}
+
 
 	register_widget( 'Sdframework_Services' );
 	register_widget( 'Sdframework_Skills' );

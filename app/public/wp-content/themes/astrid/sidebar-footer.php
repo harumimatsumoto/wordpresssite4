@@ -6,7 +6,7 @@
 ?>
 
 	<?php //Set widget areas classes based on user choice
-		$widget_areas = get_theme_mod('footer_widget_areas', '3');
+		$widget_areas = get_theme_mod('', '3');
 		if ($widget_areas == '3') {
 			$cols = 'col-md-4';
 		} elseif ($widget_areas == '2') {

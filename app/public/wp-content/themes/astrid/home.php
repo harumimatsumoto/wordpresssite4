@@ -13,6 +13,7 @@ get_header(); ?>
 		<?php 
 			//if ($category):
 			$categories = get_categories(array('orderby'=>'term_id'));
+			$num = 1;		
 			foreach($categories as $category) :
 		?>
 		<div class ="col-sm-4">
@@ -23,18 +24,18 @@ get_header(); ?>
 				</a><!--display:block;width:100%;text-align:center;-->
 				</h2>
 				<ul class ='top_lists entry-meta'>
-				<?php dynamic_sidebar( 'PopularPost' ) ; ?>
+				<?php dynamic_sidebar( 'PopularPost'.$num ) ; ?>
 				<?php
-					//TODO:あとでquery_posts使わない形に修正
-					query_posts('cat='.$category->cat_ID);
-					if (have_posts()) : while (have_posts()) : the_post();
+					//TODO:popularpostの表示がうまくいっていれば不要
+					//query_posts('cat='.$category->cat_ID);
+					//if (have_posts()) : while (have_posts()) : the_post();
 				?>
-					<li class = "text-center"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
-				<?php endwhile; endif; ?>
+					<!--<li class = "text-center"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>-->
+				<?php //endwhile; endif; ?>
 				</ul>
 			</div>
 		</div>
-		<?php endforeach; //endif;?>
+		<?php $num++; endforeach; //endif;?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
