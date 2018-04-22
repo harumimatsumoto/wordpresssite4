@@ -24,6 +24,7 @@ get_header(); ?>
 				</a><!--display:block;width:100%;text-align:center;-->
 				</h2>
 				<ul class ='top_lists entry-meta'>
+				
 				<?php dynamic_sidebar( 'PopularPost'.$num ) ; ?>
 				<?php
 					//TODO:popularpostの表示がうまくいっていれば不要
