@@ -121,6 +121,7 @@ function simpledesign_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
+	
 	//Register widget areas for the Widgetized page template
 	$pages = get_pages(array(
 		//'meta_key' => '_wp_page_template',
@@ -154,7 +155,7 @@ function simpledesign_widgets_init() {
 	}
 //	'before_widget' => "<div class='widget'".$num.">",
 	//Popularpost widget areas
-	for($i=1 ; $i <= wp_count_terms('category') ; $i++){
+	for($i=0; $i <= wp_count_terms('category') ; $i++){
 		register_sidebar(array(
 			'name' => 'PopularPost'.$i,
 			'id' => 'postcontent'.$i ,
@@ -476,6 +477,36 @@ function simpledesign_remove_page_template() {
 	}
 }
 add_action('admin_footer', 'simpledesign_remove_page_template', 10);
+
+function get_current_category(){
+    global $_curcat;
+    $cate = null;
+    if( is_category() ) {
+        //カテゴリー表示だったら
+         
+        $cat_now = get_the_category();
+        // 親の情報を＄cat_nowに格納
+        $cate = $cat_now[0];
+         
+    } else if (is_single() ) {
+        //シングルページ表示だったら
+        $cates = get_the_category();
+        $i = 0;
+        $use_category = 0;
+        foreach ($cates as $cate) {
+            //未分類を除外した配列の一番初めのカテゴリを選択
+            if($cate->category_parent > 0 && $use_category == 0) {
+                $use_category = $i;
+            }
+            $i++;
+        }
+        $cate = $cates[$use_category];
+    }
+    //カテゴリーのオブジェクトごと保持
+    $_curcat = $cate;
+    return $cate;
+}
+add_action('wp_head', 'get_current_category');
 
 /**
  * Implement the Custom Header feature.

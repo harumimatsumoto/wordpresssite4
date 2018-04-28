@@ -54,10 +54,10 @@
 	<?php endif; ?>
 
 	<?php
-		wp_link_pages( array(
+		/* wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'simpledesign' ),
 			'after'  => '</div>',
-		) );
+		) ); */
 	?>
 	<?php if ( is_single() && get_theme_mod('hide_meta') != 1 ) : ?>
 	<footer class="entry-footer">
